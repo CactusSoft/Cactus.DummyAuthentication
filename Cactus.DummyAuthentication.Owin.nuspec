@@ -4,15 +4,14 @@
     <id>$id$</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <authors>Yan O</authors>
+    <owners>CacctusSoft LLC</owners>
+    <licenseUrl>https://github.com/CactusSoft/Cactus.DummyAuthentication.Owin/blob/master/license.txt</licenseUrl>
+    <projectUrl>https://github.com/CactusSoft/Cactus.DummyAuthentication.Owin</projectUrl>    
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-    <copyright>Copyright 2016</copyright>
-    <tags>Tag1 Tag2</tags>
+    <description>Dummy OWIN authentication</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016 CactusSoft</copyright>
+    <tags></tags>
   </metadata>
 </package>
