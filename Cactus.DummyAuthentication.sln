@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cactus.DummyAuthentication.Owin", "Cactus.DummyAuthentication.Owin.csproj", "{5F60FC23-728D-446A-8B9D-DF95471302AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cactus.DummyAuthentication.Owin", "Cactus.DummyAuthentication.Owin\Cactus.DummyAuthentication.Owin.csproj", "{5F60FC23-728D-446A-8B9D-DF95471302AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cactus.DummyAuthentication.RestSharp", "Cactus.DummyAuthentication.RestSharp\Cactus.DummyAuthentication.RestSharp.csproj", "{A6772537-20CC-4F19-83D2-927B0A3F609F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5F60FC23-728D-446A-8B9D-DF95471302AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F60FC23-728D-446A-8B9D-DF95471302AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F60FC23-728D-446A-8B9D-DF95471302AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6772537-20CC-4F19-83D2-927B0A3F609F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6772537-20CC-4F19-83D2-927B0A3F609F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6772537-20CC-4F19-83D2-927B0A3F609F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6772537-20CC-4F19-83D2-927B0A3F609F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

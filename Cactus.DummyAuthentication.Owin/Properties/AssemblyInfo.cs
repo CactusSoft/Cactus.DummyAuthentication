@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Cactus.DummyAuthentication.Owin")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("OWIN dummy authentication handler")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("CactusSoft")]
+[assembly: AssemblyCompany("CactusSoft LLC")]
 [assembly: AssemblyProduct("Cactus.DummyAuthentication.Owin")]
-[assembly: AssemblyCopyright("Copyright © CactsSoft  2016")]
+[assembly: AssemblyCopyright("Copyright © CactsSoft LLC 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.1")]
-[assembly: AssemblyFileVersion("1.0.0.1")]
+[assembly: AssemblyVersion("1.0.0.5")]
+[assembly: AssemblyFileVersion("1.0.0.5")]
