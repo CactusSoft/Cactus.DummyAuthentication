@@ -9,4 +9,8 @@ Postpone the authentication task and start building app right now.
 
 Voi la, you are authenticated as _username_.
 
+#Advanced
+* In case using of RestSharp, try out `Cactus.DummyAuthentication.RestSharp` package that implements IAuthenticator
+* Pass extra claims if need. Start your token with '!' and then add url-encoded clams: `Authorization: TIMMY !role=admin&full_name=Mr%20X` 
+
 Thanks Timmy Burch for inspiration! :)
