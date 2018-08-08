@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Cactus.TimmyAuth</AssemblyName>
+    <RootNamespace>Cactus.TimmyAuth</RootNamespace>
+    <Authors>yano</Authors>
+    <Company>CactusSoft LLC</Company>
+    <Description>Authentication stub for fast and happy development. Inspired by Timmy Burch from South Park.</Description>
+    <Copyright>CactusSoft LLC 2018</Copyright>
+    <PackageLicenseUrl>WTFPL</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/CactusSoft/Cactus.DummyAuthentication</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageIconUrl>http://owncloud.inside.cactussoft.biz/index.php/s/6dnpz3spPL6Bmd5/download</PackageIconUrl>
+    <Version>1.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
