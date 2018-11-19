@@ -25,11 +25,11 @@ namespace Cactus.TimmyAuth
             var header = Context.Request.Headers["Authorization"].FirstOrDefault();
             try
             {
-                AuthenticationTicket tiсket;
+                AuthenticationTicket ticket;
                 if (header != null)
                 {
                     _log.LogDebug($"Auth header: {0}", header);
-                    tiсket = await ProcessAuthValue(header);
+                    ticket = await ProcessAuthValue(header);
                 }
                 else if(options.AuthQueryKey!=null)
                 {
@@ -37,7 +37,7 @@ namespace Cactus.TimmyAuth
                     if (!string.IsNullOrEmpty(options.AuthQueryKey) && authInfo != null)
                     {
                         _log.LogDebug($"Get auth info from query: {authInfo}");
-                        tiсket = await ProcessAuthValue(authInfo);
+                        ticket = await ProcessAuthValue(authInfo);
                     }
                     else
                     {
@@ -51,7 +51,7 @@ namespace Cactus.TimmyAuth
                     return AuthenticateResult.NoResult();
                 }
 
-                return AuthenticateResult.Success(tiсket);
+                return AuthenticateResult.Success(ticket);
             }
             catch (Exception ex)
             {
