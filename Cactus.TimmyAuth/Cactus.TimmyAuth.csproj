@@ -13,7 +13,7 @@
     <RepositoryType>GitHub</RepositoryType>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageIconUrl>http://owncloud.inside.cactussoft.biz/index.php/s/6dnpz3spPL6Bmd5/download</PackageIconUrl>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>

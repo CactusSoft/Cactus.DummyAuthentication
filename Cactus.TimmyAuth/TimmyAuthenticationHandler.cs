@@ -25,19 +25,19 @@ namespace Cactus.TimmyAuth
             var header = Context.Request.Headers["Authorization"].FirstOrDefault();
             try
             {
-                AuthenticationTicket tiket;
+                AuthenticationTicket tiсket;
                 if (header != null)
                 {
                     _log.LogDebug($"Auth header: {0}", header);
-                    tiket = await ProcessAuthValue(header);
+                    tiсket = await ProcessAuthValue(header);
                 }
-                else
+                else if(options.AuthQueryKey!=null)
                 {
                     var authInfo = Context.Request.Query[options.AuthQueryKey].FirstOrDefault();
                     if (!string.IsNullOrEmpty(options.AuthQueryKey) && authInfo != null)
                     {
                         _log.LogDebug($"Get auth info from query: {authInfo}");
-                        tiket = await ProcessAuthValue(authInfo);
+                        tiсket = await ProcessAuthValue(authInfo);
                     }
                     else
                     {
@@ -45,8 +45,13 @@ namespace Cactus.TimmyAuth
                         return AuthenticateResult.NoResult();
                     }
                 }
+                else
+                {
+                    _log.LogInformation("No 'Authorization' header, neither query key configuration. No any source of a token found, not authenticated.");
+                    return AuthenticateResult.NoResult();
+                }
 
-                return AuthenticateResult.Success(tiket);
+                return AuthenticateResult.Success(tiсket);
             }
             catch (Exception ex)
             {
