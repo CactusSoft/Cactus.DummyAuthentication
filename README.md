@@ -11,7 +11,7 @@ Postpone the authentication task and start building app right now.
 ## AspNetCore
 * Use nuget to add dependency `Install-Package Cactus.TimmyAuth`
 * Add service `services.AddTimmyAuth()` in Startup.cs ConfigureServices method
-* (OPTIONAL) Use middleware `app.UseTimmyAuthentication()` in Startup.cs Configure method if you need multiple aythentication scheme support (tested on IdentityServer4 + TIMMY)
+* (OPTIONAL) Use middleware `app.UseTimmyAuthentication()` in Startup.cs Configure method if you need multiple authentication scheme support (tested on IdentityServer4 + TIMMY)
 
 Voi la, you are authenticated as _username_.
 
